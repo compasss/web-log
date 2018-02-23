@@ -1,4 +1,4 @@
-import { queryLogList } from '../services/logs';
+import { queryLogList, deleteLogById } from '../services/logs';
 
 export default {
   namespace: 'logs',
@@ -14,6 +14,10 @@ export default {
         type: 'save',
         payload: response,
       });
+    },
+    *deleteLog({ payload, callback }, { call }) {
+      const response = yield call(deleteLogById, payload.id);
+      if (callback) callback(response);
     },
   },
 

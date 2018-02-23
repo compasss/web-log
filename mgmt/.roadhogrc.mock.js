@@ -133,6 +133,7 @@ const proxy = {
   },
   'GET /mid-server/(.*)': 'http://10.0.13.199/mid-server/',
   'POST /mid-server/(.*)': 'http://10.0.13.199/mid-server/',
+  'DELETE /mid-server/(.*)': 'http://10.0.13.199/mid-server/',
   'GET /auth-web/(.*)': 'http://10.0.13.127/auth-web/',
   'POST /auth-web/(.*)': 'http://10.0.13.127/auth-web/'
 };

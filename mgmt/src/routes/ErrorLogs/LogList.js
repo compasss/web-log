@@ -13,7 +13,7 @@ const getValue = obj => Object.keys(obj).map(key => obj[key]).join(',');
 
 @connect(({ logs, loading }) => ({
   logs,
-  loading: loading.models.rule,
+  loading: loading.models.logs,
 }))
 @Form.create()
 export default class LogList extends PureComponent {

@@ -9,6 +9,9 @@
       "extraBabelPlugins": [
         "dva-hmr"
       ]
+    },
+    "production": {
+      "publicPath": "/log-mgmt"
     }
   },
   "ignoreMomentLocale": true,
@@ -16,7 +19,6 @@
   "html": {
     "template": "./src/index.ejs"
   },
-  "publicPath": "/",
   "disableDynamicImport": true,
   "hash": true
 }

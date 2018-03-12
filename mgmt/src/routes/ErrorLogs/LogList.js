@@ -238,7 +238,7 @@ export default class LogList extends PureComponent {
       },
       {
         title: '行',
-        dataIndex: 'row',
+        dataIndex: 'line',
         width: '50px',
       },
       {

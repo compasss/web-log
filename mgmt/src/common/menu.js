@@ -5,7 +5,7 @@ const menuData = [{
   icon: 'table',
   path: 'log',
   children: [{
-    name: '基础表单',
+    name: '日志列表',
     path: 'list',
   }],
 }];

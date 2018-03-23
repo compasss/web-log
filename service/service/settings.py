@@ -88,6 +88,22 @@ DATABASES = {
     }
 }
 
+'''
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'qdm20843166_db',
+        'USER': 'qdm20843166',
+        'PASSWORD': 'aq1sw2de3',
+        'HOST': 'qdm20843166.my3w.com',
+        'PORT': '3306',
+        'OPTIONS': {
+          'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+        }
+    }
+}
+'''
+
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators

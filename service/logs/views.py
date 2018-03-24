@@ -30,14 +30,14 @@ def deleteById(request):
 def logList(request):
   try: 
     page = int(request.GET.get('page', '1'))
-    rows = int(request.GET.get('rows','1'))
+    rows = int(request.GET.get('rows','10'))
     ip = request.GET.get('ip', False)
     project = request.GET.get('project', False)
     type = request.GET.get('type', False)
     line = request.GET.get('line', False)
     col = request.GET.get('col', False)
     startTime = request.GET.get('startTime', False)
-    endTime = request.GET.get('endTime', false)
+    endTime = request.GET.get('endTime', False)
   except ValueError:
     page = 1
     rows = 1
@@ -47,7 +47,6 @@ def logList(request):
   if project:
     pass
 
-
-  re = list(Logs.objects.values('ip', 'line'))
+  re = list(Logs.objects.values())
   res = re[offset:end]
   return JsonResponse(res, safe=False)
